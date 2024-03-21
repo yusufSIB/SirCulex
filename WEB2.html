@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portofolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="WEB2.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-flex p-3">
+    <a class="navbar-brand" href="#">Portofolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper, nisl at ultrices rhoncus, purus ex vestibulum magna, ut eleifend magna turpis a sapien.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="container  rounded p-3 mb-2 bg-white " id="portfolio">
+      <div class="row ">
+        <div class="col text-center ">
+          <h2>Portfolio</h2>
+          <div class="row ">
+            <div class="col-md-4 ">
+              <div class="card ">
+                <img src="https://via.placeholder.com/300" class="card-img-top " alt="Project 1">
+                <div class="card-body ">
+                  <h5 class="card-title">Project 1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Project 2</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Project 3</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="text-center p-4 border-top">&copy; Sir Culex</div>
+          <h2>Contact Me</h2>
+          <p>Email: Kosong</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showProjectName(projectName) {
+      alert("Project Name: " + projectName);
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      var viewButtons = document.querySelectorAll(".btn-primary");
+      viewButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          var projectName = this.closest(".card").querySelector(".card-title").innerText;
+          showProjectName(projectName);
+        });
+      });
+    });
+  </script>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

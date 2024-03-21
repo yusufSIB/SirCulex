@@ -1,0 +1,20 @@
+body ,html{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #526D82 , #DDE6ED, #27374D);
+  background: 
+      linear-gradient(to bottom, #27374D, #DDE6ED ,#526D82) left,
+      linear-gradient(to bottom, #27374D, #DDE6ED ,#526D82) right,
+      linear-gradient(to bottom, #526D82 , #DDE6ED, #27374D);
+  background-size: 65px 100%, 65px 100%, 100% 100%; 
+  background-repeat: no-repeat;
+  }
+    #portfolio {
+    background-color: #f9f9f9;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  

@@ -1,9 +1,4 @@
-document.querySelectorAll('.btnDetail').forEach(picture =>{
-    picture.addEventListener('click', (e) => {
-            let parent = e.target.parentNode.parentNode;
-
-            let gambar = parent.querySelector('.card-img-top').src;
-            let numb = parent.querySelector(`.numb`).innerHTML;
-            console.log(`numb: ${numb}`);
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    var aboutSection = document.getElementById("about");
+    aboutSection.classList.add("animate__animated", "animate__bounceInDown");
 });

@@ -12,7 +12,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-flex p-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-flex p-3">
     <a class="navbar-brand" href="#">Portofolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,84 +37,147 @@
   <section id="about" class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col text-center">
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper, nisl at ultrices rhoncus, purus ex vestibulum magna, ut eleifend magna turpis a sapien.</p>
+        <div class="col text-center ">
+          <h2>Welcome to my Portofolio</h2>
+          <p class="mt-4">Selamat datang di portfolio saya!!!</p>
         </div>
       </div>
     </div>
   </section>
 
-    <div class="container  rounded p-3 mb-2 bg-white " id="portfolio">
-      <div class="row ">
-        <div class="col text-center ">
-          <h2>Portfolio</h2>
-          <div class="row ">
-            <div class="col-md-4 ">
-              <div class="card ">
-                <img src="https://via.placeholder.com/300" class="card-img-top " alt="Project 1">
-                <div class="card-body ">
-                  <h5 class="card-title">Me</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="#" class="btn btn-primary">View</a>
-                </div>
+  <div class="container rounded p-3 mb-2 bg-white" id="portfolio">
+    <div class="row">
+      <div class="col text-center">
+        <h2>Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="port/1.jpeg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">About Me</h5>
+                <p class="card-text">Perkenalan Diri</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">View</button>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
-                <div class="card-body">
-                  <h5 class="card-title">Certification</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="#" class="btn btn-primary">View</a>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="port/2.jpeg" class="card-img-top" alt="Project 2">
+              <img src="port/Pmmr.jpeg" class="img-fluid mb-3" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Certificates</h5>
+                <p class="card-text">Yang pernah gw achive</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">View</button>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                  <h5 class="card-title">Education</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="#" class="btn btn-primary">View</a>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="port/p9.jpeg" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Education</h5>
+                <p class="card-text">Jenjang pendidikan</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal">View</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <div class="text-center p-4 border-top">&copy; Sir Culex</div>
-          <h2>Contact Me</h2>
-          <p>Email: Kosong</p>
-        </div>
+  </div>
+  
+  <!-- Modal for Project 1 -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">About me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="port/1.jpeg" class="img-fluid mb-3" alt="Project 1">
+        <p>Nama saya Yusuf Subandrio dari Universitas Mulawarman, program studi Sistem Informasi kelas B angkatan 2022. Saya kelahiran 2004, daerah asal Balikpapan. #HalaMadrid</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <script>
-    function showProjectName(projectName) {
-      alert("Project Name: " + projectName);
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-      var viewButtons = document.querySelectorAll(".btn-primary");
-      viewButtons.forEach(function(button) {
-        button.addEventListener("click", function() {
-          var projectName = this.closest(".card").querySelector(".card-title").innerText;
-          showProjectName(projectName);
-        });
-      });
-    });
-  </script>
+<!-- Modal for Certificates -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2ModalLabel">Certificates</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="port/2.jpeg" class="img-fluid mb-3" alt="Project 2">
+        <img src="port/Pmmr.jpeg" class="img-fluid mb-3" alt="Project 2">
+        <h3>Penghargaan dari Moonton</h3>
+        <p>Season lau dapat penghargaan dari Moonton</p>
+        <p>#98 Indonesia;</p>
+        <p>#3 Kalimantan Timur;</p> 
+        <p>#2 Samarinda;</p>
+        <p>#1 Samarinda Ulu.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Education-->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3ModalLabel">Education</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="port/p9.jpeg" class="img-fluid mb-3" alt="Project 3">
+        <h3>Jenjang pendidikan</h3>
+        <p>Dari SD hingga SMA saya bersekolah di Balikpapan. </p>
+        <p>-SD Kemala Bhayangkari</p>
+        <p>-SMP 3 </p>
+        <p>-SMA 6</p>
+        <p>-Sekarang saya sedang berkuliah di Universitas Milawarman Jurusan Sistem Informasi S1</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h2>Contact Me</h2>
+              <p class="mt-4">Email: yusufsubandrio0@gmail.com</p>
+              <!-- Tambahkan ikon Instagram -->
+              <a href="https://www.instagram.com/cupaucups?igsh=MTNwc2pwMzhwM3pjMA==" target="_blank" rel="noopener noreferrer">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4FzTjmYzZUJnyWGFbM3wzxnjYV-i-XGQ81A&usqp=CAU" alt="Instagram" width="30" height="30" class="rounded-circle">
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+ 

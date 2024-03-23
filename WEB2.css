@@ -10,11 +10,81 @@ body ,html{
   background-size: 65px 100%, 65px 100%, 100% 100%; 
   background-repeat: no-repeat;
   }
-    #portfolio {
-    background-color: #f9f9f9;
-  }
-  
-  section {
+
+#port h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about p{
+  font-size:large;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+section {
     padding: 50px 0;
-  }
-  
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important; 
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 1.3rem; 
+  font-family:'Courier New', Courier, monospace; 
+}
+
+.modal-content {
+  background-color: #343a40;
+}
+
+.modal-title {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+}
+
+
+.btn-primary,
+.btn-secondary {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.modal-body p{
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.card-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.card-text{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+}
+
+#contact{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
+
+section h2 {
+  text-align: center;
+  text-shadow: 0 0 2px ;
+  color: #EEEEEE;
+  margin-top: auto;
+  display: inline;
+  padding: 5px;
+}
